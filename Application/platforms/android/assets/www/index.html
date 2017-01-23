@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		var online_locations = [];
+		var online_locations_names = [];
+		var online_parents_names = [];
+		var online_parents_numbers = [];
+		var online_closest = [];
+	</script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYw5loZRfC-6nrV7wGGro8E4Z2yFGHGRQ"></script>
+	<!-- Include the Realtime Cloud Storage JavaScript library from the CDN -->
+	<script type='text/javascript' src='https://storage-cdn.realtime.co/storage/1.0.0/realtime-storage-min.js'></script>
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="realtime.js"></script>
+	<script type="text/javascript" src="map.js"></script>
+	<script type="text/javascript" src="sms.js"></script>
+</head>
+<body>
+	<h3>PhoneGap-GoogleMaps-Plugin</h3>
+	<div style="width:100%;height:400px" id="map_canvas"></div>
+	<button id="button">Full Screen</button>
+	<form id="Locations_Form">
+		<button id="addloc" type="button">Add Location</button>
+		<button id="closest" type="button">Find Closest</button>
+		<!-- <button id="reset">Reset Local Storage</button>
+		<button id="show">Show Local Storage</button> -->
+		
+		<!-- <button id="sms" type="button">Send</button> -->
+		<!-- <button id="show_online" type="button">Show Online Locations</button> -->
+		<button id="update_online_locs" type="button">Update Online Locations</button>
+		<!-- <button id="update_online_parents" type="button">Update Online Parents</button> -->
+		<button id="display_online" type="button">Display Online Locations on the map</button>
+		<button id="hide_online" type="button">Hide Online Locations</button>
+		<div>
+			<select onchange="document.getElementById('geocode_location').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+				<option></option>
+			   <option value="School">Inventure Academy</option>
+			</select>
+			<input type="text" id="geocode_location">
+			<input name="idValue" id="idValue" type="hidden">
+		</div>
+		<input type="button" value="Submit" onclick="geocode(document.getElementById('geocode_location').value, document.getElementById('geocode_location').value);"/>
+	</form>
+	<form id="Parents_Form">
+		Name: <input type="text" id="parent_name">
+		<br/>
+		Number: <input type="text" id="parent_number">
+		<input type="button" value="Submit" onclick="addParent();"/>
+	</form>
+	<!-- <form id="Distance">
+		Max Radius?<input type="text" id="max_radius">
+		<input type="button" value="Submit" onclick="findClosest();"/>
+	</form> -->
+</body>
+</html>

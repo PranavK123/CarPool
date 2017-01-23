@@ -1,0 +1,13 @@
+Requesting carpool:
+
+- Parent enters pickup/drop location
+- Enters morning/afternoon
+- Finds other carpoolers in a radius of x km
+- Contacts other parent
+
+Uploading carpool:
+
+- Parent enters source/destination
+- Enters morning/afternoon
+- Enters info like name, phone number
+- Submits
