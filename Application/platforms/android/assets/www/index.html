@@ -9,6 +9,7 @@
 		var online_parents_names = [];
 		var online_parents_numbers = [];
 		var online_closest = [];
+		var online_permanents = [];
 	</script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYw5loZRfC-6nrV7wGGro8E4Z2yFGHGRQ"></script>
 	<!-- Include the Realtime Cloud Storage JavaScript library from the CDN -->
@@ -48,6 +49,16 @@
 		Name: <input type="text" id="parent_name">
 		<br/>
 		Number: <input type="text" id="parent_number">
+		Permanent?
+		<div>
+			<select onchange="document.getElementById('permanentValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+				<option></option>
+			   <option value="School">Yes</option>
+			   <option value="School">No</option>
+			</select>
+			<input type="text" id="permanentValue">
+			<input name="permanent" id="permanent" type="hidden">
+		</div>
 		<input type="button" value="Submit" onclick="addParent();"/>
 	</form>
 	<!-- <form id="Distance">

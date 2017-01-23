@@ -280,7 +280,7 @@ function displayLocation() {
 function displayLocations() {
     for (var i = 0; i < online_locations.length; i++) {
         var temp_loc = online_locations[i];
-        var msg = "Info:\n" + "Parent: " + online_parents_names[i] + "\nNumber: " + online_parents_numbers[i]
+        var msg = "Info:\n" + "Parent: " + online_parents_names[i] + "\nNumber: " + online_parents_numbers[i] + "\nPermanent: " + online_permanents[i];
         map.addMarker(
             {
             'position': temp_loc,
@@ -302,9 +302,10 @@ function addParent() {
     console.log("addParent");
     var name = document.getElementById("parent_name").value;
     var number = document.getElementById("parent_number").value;
+    var permanent = document.getElementById("permanentValue").value;
     document.getElementById("Locations_Form").style.display="block";
     document.getElementById("Parents_Form").style.display="none";
-    addItemLocation(currentPos.lat, currentPos.lng, online_locations.length + 1, name, number);
+    addItemLocation(currentPos.lat, currentPos.lng, online_locations.length + 1, name, number, permanent);
     // addItemParent(name, number, online_parents.length + 1);
 }
 

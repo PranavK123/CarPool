@@ -41,9 +41,11 @@ function retrieveLocations(disp) {
 			temp_Long = itemSnapshot.val().Long;
 			temp_Num = itemSnapshot.val().PhoneNumber;
 			temp_Name = itemSnapshot.val().Name;
+            temp_Perm = itemSnapshot.val().Permanent;
 			online_parents_names.push(temp_Name);
 			online_parents_numbers.push(temp_Num);
 			online_locations.push(new plugin.google.maps.LatLng(temp_Lat, temp_Long));
+            online_permanents.push(temp_Perm);
 			// online_locations_names.push( reverseGeocode(new plugin.google.maps.LatLng(temp_Lat, temp_Long)) );
 		} else {
 			if (disp) {displayLocations();}
@@ -75,15 +77,16 @@ function retrieveLocations(disp) {
 //     });
 // }
 
-function addItemLocation(lat, long, id, name, number) {
+function addItemLocation(lat, long, id, name, number, permanent) {
     LocationTableRef.push({
         ID: id,
         Lat: lat,
         Long: long,
         PhoneNumber: number,
-        Name: name
+        Name: name,
+        Permanent: permanent
     });
-    retrieveLocations();
+    retrieveLocations(false);
 }
 
 // function addItemParent(name, number, id) {
