@@ -15,7 +15,7 @@ var callback = function(response, status) {
                 var duration = element.duration.text;
                 var from = origins[i];
                 var to = destinations[j];
-                alert(distance + "" + to);
+                // alert(distance + "" + to);
                 if (location_names.indexOf(to) < 0) {
                   location_names.push(to);
                   location_dists.push(distance_in_km);
@@ -29,7 +29,7 @@ var callback = function(response, status) {
             min = location_dists[k];
           }
         }
-        alert(closest + "" + min);
+        alert(closest + "\nDistance = " + min);
     }
     console.log("Exited callback");
 }
@@ -73,12 +73,7 @@ function distance(origin, destination) {
     console.log("Exited distance");
 }
 var onSuccessful_LocationAcquiring_ExternalPlugin = function(position) {
-    var msg = ["Current your location:\n",
-        "latitude:" + position.coords.latitude,
-        "longitude:" + position.coords.longitude,
-        "speed:" + position.coords.speed,
-        "time:" + position.timestamp
-    ].join("\n");
+    var msg = "Your current location";
 
     latLng = new plugin.google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
@@ -87,6 +82,12 @@ var onSuccessful_LocationAcquiring_ExternalPlugin = function(position) {
         'title': msg
     }, function(marker) {
         marker.showInfoWindow();
+    });
+
+    map.animateCamera({
+      'target': latLng,
+      'zoom': 11,
+      'duration': 1000 // 1 seconds
     });
 
 };
@@ -268,7 +269,6 @@ function addLocation(clicked) {
             setLocClicked = false;
             document.getElementById("Locations_Form").style.display="none";
             document.getElementById("Parents_Form").style.display="block";
-            // addItemLocation(currentPos.lat, currentPos.lng, online_locations.length + 1);
         }
     }
 }
@@ -280,7 +280,8 @@ function displayLocation() {
 function displayLocations() {
     for (var i = 0; i < online_locations.length; i++) {
         var temp_loc = online_locations[i];
-        var msg = "Info:\n" + "Parent: " + online_parents_names[i] + "\nNumber: " + online_parents_numbers[i] + "\nPermanent: " + online_permanents[i];
+        console.log("Online permanents: " + online_permanents);
+        var msg = "Parent: " + online_parents_names[i] + "\nNumber: " + online_parents_numbers[i] + "\nPermanent: " + online_permanents[i] + "\nTime of Departure: " + online_times[i];
         map.addMarker(
             {
             'position': temp_loc,
@@ -303,10 +304,10 @@ function addParent() {
     var name = document.getElementById("parent_name").value;
     var number = document.getElementById("parent_number").value;
     var permanent = document.getElementById("permanentValue").value;
+    var time = document.getElementById("departure_time").value;
     document.getElementById("Locations_Form").style.display="block";
     document.getElementById("Parents_Form").style.display="none";
-    addItemLocation(currentPos.lat, currentPos.lng, online_locations.length + 1, name, number, permanent);
-    // addItemParent(name, number, online_parents.length + 1);
+    addItemLocation(currentPos.lat, currentPos.lng, online_locations.length + 1, name, number, permanent, time);
 }
 
 // Geocoding

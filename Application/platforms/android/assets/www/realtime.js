@@ -1,9 +1,6 @@
 var LocationStorageRef;
 var LocationTableRef;
 
-var ParentStorageRef;
-var ParentTableRef;
-
 // Define your credentials and security mode
 var credentials = {
   applicationKey: "mLDx7V",   // Your application key
@@ -18,23 +15,20 @@ Realtime.Storage.create( credentials,
         console.log("Creating LocationData table Reference");
         LocationStorageRef = ref;
         LocationTableRef = ref.table("LocationData");
-        retrieveLocations();
-
-        // console.log("Creating ParentInfo table Reference");
-        // ParentStorageRef = ref;
-        // ParentTableRef = ref.table("ParentInfo");   // Keep the Storage Reference for later usage
-        // retrieveParents();  
+        retrieveLocations(false);
     },
     function(error){
-        alert("Error connecting to the Storage " + error);
     }
 );
 
 function retrieveLocations(disp) {
+    clearTemporaryData();
 	online_locations = [];
 	// online_locations_names = [];
 	online_parents_names = [];
 	online_parents_numbers = [];
+    online_permanents = [];
+    online_times = [];
 	LocationTableRef.getItems(function(itemSnapshot) {
 		if (itemSnapshot) {
 			temp_Lat = itemSnapshot.val().Lat;
@@ -42,10 +36,12 @@ function retrieveLocations(disp) {
 			temp_Num = itemSnapshot.val().PhoneNumber;
 			temp_Name = itemSnapshot.val().Name;
             temp_Perm = itemSnapshot.val().Permanent;
+            temp_Time = itemSnapshot.val().Time;
 			online_parents_names.push(temp_Name);
 			online_parents_numbers.push(temp_Num);
 			online_locations.push(new plugin.google.maps.LatLng(temp_Lat, temp_Long));
             online_permanents.push(temp_Perm);
+            online_times.push(temp_Time);
 			// online_locations_names.push( reverseGeocode(new plugin.google.maps.LatLng(temp_Lat, temp_Long)) );
 		} else {
 			if (disp) {displayLocations();}
@@ -77,14 +73,15 @@ function retrieveLocations(disp) {
 //     });
 // }
 
-function addItemLocation(lat, long, id, name, number, permanent) {
+function addItemLocation(lat, long, id, name, number, permanent, time) {
     LocationTableRef.push({
         ID: id,
         Lat: lat,
         Long: long,
         PhoneNumber: number,
         Name: name,
-        Permanent: permanent
+        Permanent: permanent,
+        Time: time
     });
     retrieveLocations(false);
 }
@@ -98,3 +95,36 @@ function addItemLocation(lat, long, id, name, number, permanent) {
 //     });
 //     retrieveParents();
 // }
+
+function clearTemporaryData() {
+    var d = new Date(),
+    h = (d.getHours()<10?'0':'') + d.getHours(),
+    m = (d.getMinutes()<10?'0':'') + d.getMinutes();
+    var nowTime = h + ':' + m;
+    console.log(nowTime);
+    LocationTableRef.getItems(function(itemSnapshot) {
+        if (itemSnapshot) {
+            var temp_Perm = itemSnapshot.val().Permanent;
+            var temp_Time = itemSnapshot.val().Time;
+            console.log(nowTime);
+            d1 = Date.parse("01/01/2017 " + temp_Time);
+            d2 = Date.parse("01/01/2017 " + nowTime);
+            if (d2 > d1 && temp_Perm == "No") {
+                itemSnapshot.ref().del(
+                    function success(itemSnapshot) {
+                        // Logs the value of the item
+                        console.log(itemSnapshot.val());
+                    }, 
+                    function error(data) { 
+                        console.error("Error:", data); 
+                    }
+                );
+            }
+        } else {
+            console.log("Complete");
+        }
+    },
+    function(error) {
+        alert("Oops, error retrieving items: " + error);
+    });
+}
