@@ -48,11 +48,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="realtime.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="realtime.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/realtime.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
               <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1779,8 +1802,8 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/assets/www/index.html" />
         <option value="$PROJECT_DIR$/src/com/phonegap/helloworld/MainActivity.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/assets/www/map.js" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
       </list>
     </option>
   </component>
@@ -1828,7 +1851,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../App/platforms/android/build.gradle" />
     <property name="device.picker.selection" value="TA99303XEY" />
-    <property name="SearchEverywhereHistoryKey" value="realtime&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/realtime.js&#10;manifest&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;maina&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;index&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;index.html&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;receive&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;servi&#9;ACTION&#9;null&#10;mainact&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;service&#9;ACTION&#9;template.create.ServiceService&#10;activity&#9;PSI&#9;JAVA://com.phonegap.helloworld.MainActivity&#10;receiver&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;receiver.j&#9;FILE&#9;file://C:/Users/pranavmk/AppData/Local/Android/sdk/sources/android-23/com/android/frameworkperf/Receiver.java&#10;strings&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/values/strings.xml&#10;androidmani&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;oncreat&#9;PSI&#9;JAVA://de.appplant.cordova.plugin.background.ForegroundService#onCreate&#10;config.x&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/xml/config.xml&#10;map.js&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/map.js" />
+    <property name="SearchEverywhereHistoryKey" value="strings&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/values/strings.xml&#10;manife&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;realtime&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/realtime.js&#10;manifest&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;maina&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;index&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;index.html&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;receive&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;servi&#9;ACTION&#9;null&#10;mainact&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;service&#9;ACTION&#9;template.create.ServiceService&#10;activity&#9;PSI&#9;JAVA://com.phonegap.helloworld.MainActivity&#10;receiver&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;receiver.j&#9;FILE&#9;file://C:/Users/pranavmk/AppData/Local/Android/sdk/sources/android-23/com/android/frameworkperf/Receiver.java&#10;androidmani&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;oncreat&#9;PSI&#9;JAVA://de.appplant.cordova.plugin.background.ForegroundService#onCreate&#10;config.x&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/xml/config.xml&#10;map.js&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/map.js" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.23518164" />
     <property name="android.project.structure.last.selected" value="android" />
@@ -2554,26 +2577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
-          <folding>
-            <element signature="e#2259#2277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/map.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -2588,6 +2591,25 @@
           <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
