@@ -173,7 +173,10 @@
             "path": "cordova-plugin-googlemaps-master\\cordova-plugin-googlemaps-master"
         },
         "is_top_level": true,
-        "variables": {}
+        "variables": {
+            "NSLOCATIONWHENINUSEUSAGEDESCRIPTION": "Show your location on the map",
+            "NSLOCATIONALWAYSUSAGEDESCRIPTION": "Trace your location on the map"
+        }
     },
     "com.transistorsoft.cordova.background-geolocation": {
         "source": {
@@ -224,6 +227,23 @@
             "subdir": "."
         },
         "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-cocoalumberjack": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-cocoalumberjack"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.googlemaps.ios": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mapsplugin/cordova-plugin-googlemaps-sdk",
+            "subdir": "."
+        },
+        "is_top_level": false,
         "variables": {}
     }
 }

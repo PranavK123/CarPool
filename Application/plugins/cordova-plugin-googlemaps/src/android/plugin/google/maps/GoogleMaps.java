@@ -427,6 +427,7 @@ public class GoogleMaps extends CordovaPlugin implements View.OnClickListener, O
     } catch (NameNotFoundException e) {}
 
     String API_KEY = appliInfo.metaData.getString("com.google.android.maps.v2.API_KEY");
+    System.out.println("The api key is: " + API_KEY);
     if ("API_KEY_FOR_ANDROID".equals(API_KEY)) {
 
       AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity);

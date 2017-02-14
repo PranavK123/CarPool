@@ -1,0 +1,12 @@
+{
+    "AudioToolbox.framework": 3,
+    "AVFoundation.framework": 3,
+    "CFNetwork.framework": 1,
+    "SystemConfiguration.framework": 2,
+    "libsqlite3.dylib": 1,
+    "ImageIO.framework": 1,
+    "CoreLocation.framework": 3,
+    "AddressBook.framework": 1,
+    "AddressBookUI.framework": 1,
+    "CoreMotion.framework": 1
+}

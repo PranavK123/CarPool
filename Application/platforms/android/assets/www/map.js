@@ -79,7 +79,8 @@ var onSuccessful_LocationAcquiring_ExternalPlugin = function(position) {
 
     map.addMarker({
         'position': latLng,
-        'title': msg
+        'title': msg,
+        'icon': 'blue'
     }, function(marker) {
         marker.showInfoWindow();
     });

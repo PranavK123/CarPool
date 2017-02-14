@@ -38,11 +38,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="map.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/www/map.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="realtime.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/www/realtime.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="640">
-              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -1805,27 +1815,20 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../App/platforms/android/build.gradle" />
     <property name="device.picker.selection" value="TA99303XEY" />
-    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/values/strings.xml&#10;manifest&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;maina&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;index&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;index.html&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;receive&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;servi&#9;ACTION&#9;null&#10;mainact&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;service&#9;ACTION&#9;template.create.ServiceService&#10;activity&#9;PSI&#9;JAVA://com.phonegap.helloworld.MainActivity&#10;receiver&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;receiver.j&#9;FILE&#9;file://C:/Users/pranavmk/AppData/Local/Android/sdk/sources/android-23/com/android/frameworkperf/Receiver.java&#10;strings&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/values/strings.xml&#10;androidmani&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;oncreat&#9;PSI&#9;JAVA://de.appplant.cordova.plugin.background.ForegroundService#onCreate&#10;config.x&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/xml/config.xml&#10;map.js&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/map.js" />
+    <property name="SearchEverywhereHistoryKey" value="realtime&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/realtime.js&#10;manifest&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;maina&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;index&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;index.html&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/index.html&#10;receive&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;servi&#9;ACTION&#9;null&#10;mainact&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/src/com/phonegap/helloworld/MainActivity.java&#10;service&#9;ACTION&#9;template.create.ServiceService&#10;activity&#9;PSI&#9;JAVA://com.phonegap.helloworld.MainActivity&#10;receiver&#9;ACTION&#9;template.create.OtherBroadcast Receiver&#10;receiver.j&#9;FILE&#9;file://C:/Users/pranavmk/AppData/Local/Android/sdk/sources/android-23/com/android/frameworkperf/Receiver.java&#10;strings&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/values/strings.xml&#10;androidmani&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/AndroidManifest.xml&#10;oncreat&#9;PSI&#9;JAVA://de.appplant.cordova.plugin.background.ForegroundService#onCreate&#10;config.x&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/res/xml/config.xml&#10;map.js&#9;FILE&#9;file://C:/Users/pranavmk/Desktop/Pranav/Application/platforms/android/assets/www/map.js" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.23518164" />
     <property name="android.project.structure.last.selected" value="android" />
@@ -2144,13 +2147,22 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3232" height="1732" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879657" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2158,20 +2170,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51862466" sideWeight="0.5012903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51862466" sideWeight="0.49870968" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.5012903" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39971346" sideWeight="0.49870968" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39971346" sideWeight="0.49870968" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2207,14 +2219,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/map.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/www/map.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10360">
           <caret line="259" column="31" selection-start-line="259" selection-start-column="31" selection-end-line="259" selection-end-column="31" />
           <folding />
@@ -2240,7 +2244,7 @@
         <state relative-caret-position="3080">
           <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2272,7 +2276,7 @@
         <state relative-caret-position="3080">
           <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2304,7 +2308,7 @@
         <state relative-caret-position="3080">
           <caret line="77" column="17" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2329,7 +2333,7 @@
         <state relative-caret-position="2840">
           <caret line="71" column="2" selection-start-line="71" selection-start-column="2" selection-end-line="71" selection-end-column="2" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2347,7 +2351,7 @@
         <state relative-caret-position="2800">
           <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2386,7 +2390,7 @@
         <state relative-caret-position="2880">
           <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2562,7 +2566,7 @@
         <state relative-caret-position="442">
           <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
-            <element signature="e#2259#2277#0" expanded="true" />
+            <element signature="e#2259#2277#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2572,8 +2576,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/www/map.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="100" column="42" selection-start-line="100" selection-start-column="42" selection-end-line="100" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/www/realtime.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="640">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding />
         </state>
       </provider>
